@@ -14,9 +14,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -52,60 +51,56 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JavaScript - for mobile menu
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I have typically only used Flexbox in the past, but this time I knew I wanted to use CSS grid to layout the page correctly. 
+Ultimately I found that using a combinatino of CSS grid and Flexbox gave me the most flexibility.
 
-To see how you can add code snippets, see below:
+Based on feedback I received from the qr code project, I tried to only use classes in my HTML when they were truly needed to target a specific element instead of automatically adding a class to every element.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <main>
+      <h1 class="title">The Bright Future of Web 3.0?</h1>
+      <div class="content">
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?
+        </p>
+        <button>Read More</button>
+      </div>
+    </main>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+body{
+  grid-template-areas: 
+            ". header header header ."
+            ". image image sidebar ."
+            ". content content sidebar ."
+            ". article article article ."
+  }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to continue focusing on condensing my CSS and keeping it as dry as possible. Sometimes I feel like I am tweaking the margins and padding areas too much. I want to expand my knowledge of CSS grid and to expand my use of custom style properties saved in the root at the top of the page.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Kevin Powell's youtube channel](https://www.youtube.com/@KevinPowell) - I really like Kevin Powell's tutorials on CSS grid and flexbox. 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Rachel Dooley](https://www.rachelandersondooley.com)
+- Frontend Mentor - [@Rae1821](https://www.frontendmentor.io/profile/Rae1821)
+- Twitter - [@RachelADooley](https://www.twitter.com/RachelADooley)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

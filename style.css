@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
 :root {
 
     --fw-regular: 400;
@@ -33,7 +31,13 @@ img {
     max-width: 100%;
 }
 
+
+/******************************** MOBILE STYLES *******************************/
+
+
+/**********/
 /* Header */
+/**********/
 
 header {
     display: flex;
@@ -47,7 +51,9 @@ header {
     width: 50px;
 }
 
+/**************/
 /* Navigation */
+/**************/
 
 .nav {
     position: fixed;
@@ -55,10 +61,9 @@ header {
     color: var(--clr-dark-blue);
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 35%;
     right: 0;
     z-index: 100;
-
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -66,16 +71,19 @@ header {
 .nav-list {
     list-style: none;
     display: flex;
-    height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 6em;
+    padding-left: .5em;
+}
+
+.nav-list > li {
+    padding: 1em;
 }
 
 .nav-list > li > a {
     color: var(--clr-dark-blue);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -141,7 +149,7 @@ header {
 .hamburger::after { bottom: 7px }
 
 /*****************/
-/* Hero Section */
+/* Hero Styles */
 /*****************/
 
 .hero {
@@ -153,6 +161,9 @@ header {
     width: 100%;
     margin: 0 auto;
 }
+/*****************/
+/** Main Styles **/
+/*****************/
 
 .title {
     color: var(--clr-dark-blue);
@@ -181,11 +192,12 @@ button {
     letter-spacing: 3px;
     font-weight: var(--fw-regular);
     margin-bottom: 3em;
+    cursor: pointer;
 }
 
-/************************/
-    /* New Section */
-/************************/
+/********************/
+/** Sidebar Styles **/
+/********************/
 
 .sidebar {
     background-color: var(--clr-dark-blue);
@@ -217,6 +229,7 @@ button {
 
 .sidebar--section >h3:hover {
     color: var(--clr-primary);
+    cursor: pointer;
 }
 
 .sidebar--section > p {
@@ -228,7 +241,7 @@ button {
 
 
 /*********************/
-/** Article Section **/
+/** Article Styles  **/
 /*********************/
 
 .articles--container {
@@ -274,6 +287,7 @@ button {
 
 .article--info > h3:hover {
     color: var(--clr-secondary);
+    cursor: pointer;
 }
 
 .article--info > p {
@@ -285,9 +299,8 @@ button {
     align-self: center;
 }
 
-/*****************/
-/* Media Queries */
-/*****************/
+
+/******************************* DESKTOP STYLES ***************************/
 
 @media (min-width: 900px) {
 
@@ -296,7 +309,7 @@ button {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 2em auto auto 380px 2em;
-        grid-template-rows: 75px 275px 250px 300px; 
+        grid-template-rows: 100px 275px 250px 300px; 
         grid-template-areas: 
             ". header header header ."
             ". image image sidebar ."
@@ -307,6 +320,8 @@ button {
     header {
         grid-area: header;
         max-width: 1200px;
+        padding: 1em 0;
+        margin: 2em 0;
     }
 
     .nav {
@@ -318,13 +333,14 @@ button {
 
     .nav-list {
         flex-direction: row;
-        
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .nav-list > li > a {
-        color: var(--clr-gray-blue);
+        color: var(--clr-dark-grayblue);
         font-weight: 400;
-        padding-left: 3em;
+        font-size: .875rem;
     }
 
     .nav-toggle {
@@ -340,7 +356,7 @@ button {
     main {
         grid-area: content;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
     }
 
@@ -348,22 +364,20 @@ button {
         font-size: 3rem;
         color: var(--clr-dark-blue);
         width: 35%;
-        margin-top: 0;
+        align-self: center;
     }
 
     main .content {
         font-size: 1rem;
         color: var(--clr-dark-grayblue);
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        
     }
 
     main .content > p {
         grid-column: 3 / 4;
         line-height: 1.75;
-        padding-bottom: 1em;
+        padding-bottom: 3em;
         margin-right: 2em;
     }
 
