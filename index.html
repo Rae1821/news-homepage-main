@@ -29,7 +29,7 @@
       <!-- Navigation -->
       <nav class="nav" id="nav">
         <ul class="nav-list">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
           <li><a href="#">Trending</a></li>
@@ -38,24 +38,29 @@
       </nav>
     </header>
 
-    <!-- Large hero image -->
-    <div class="hero--img"></div>
+   
   
     <!-- Main article area -->
     <main>
-      <h1 class="title">The Bright Future of Web 3.0?</h1>
-      <div class="content">
-        <p>
-          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-          But is it really fulfilling its promise?
-        </p>
-        <button>Read More</button>
+       <!-- Large hero image -->
+      <div class="hero--img"></div>
+      <!-- Top Content Section -->
+      <div class="top-content">
+        <span class="visuallyhidden">Main article</span>
+        <h1 class="top-title">The Bright Future of Web 3.0?</h1>
+        <div class="top-description">
+          <p>
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+          <button aria-label="Read More about Web 3.0">Read More</button>
+        </div>
       </div>
-    </main>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <h2>New</h2>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <span class="visuallyhidden">Sidebar articles</span>
+        <h2>New</h2>  
         <div class="sidebar--section">
           <h3>Hydrogen VS Electric Cars</h3>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
@@ -70,38 +75,40 @@
         </div>
       </aside>
 
-    <!-- Bottom Articles -->
-    <section class="articles--container">
-      <!-- Article 01 -->
-      <article>
-        <img class="article--img" src="assets/images/image-retro-pcs.jpg" alt="retro pcs">
-        <div class="article--info">
-          <span>01</span>
-          <h3>Reviving Retro PCs</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
+      <!-- Bottom Articles -->
+      <div class="bottom-articles--container">
+        <span class="visuallyhidden">Additional Articles List</span>
+        <!-- Article 01 -->
+        <div class="article">
+          <img class="article--img" src="assets/images/image-retro-pcs.jpg" alt="retro pcs">
+          <div class="article--info">
+            <span>01</span>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
         </div>
-      </article>
-      <!-- Article 02 -->
-      <article>
-        <img class="article--img"  src="assets/images/image-top-laptops.jpg" alt="laptop keyboard">
-        <div class="article--info">
-          <span>02</span>
-          <h3>Top 10 Laptops of 2022</h3>
-          <p>Our best picks for various needs and budgets</p>
+        <!-- Article 02 -->
+        <div class="article">
+          <img class="article--img"  src="assets/images/image-top-laptops.jpg" alt="laptop keyboard">
+          <div class="article--info">
+            <span>02</span>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets</p>
+          </div>
         </div>
-      </article>
-      <!-- Article 03 -->
-      <article>
-        <img class="article--img" src="assets/images/image-gaming-growth.jpg" alt="gaming controller">
-        <div class="article--info">
-          <span>03</span>
-          <h3>The Growth of Gaming</h3>
-          <p>How the pandemic has sparked fresh opportunities</p>
+        <!-- Article 03 -->
+        <div class="article">
+          <img class="article--img" src="assets/images/image-gaming-growth.jpg" alt="gaming controller">
+          <div class="article--info">
+            <span>03</span>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities</p>
+          </div>
         </div>
-      </article>
-    </section>
-    
+      </div>
+    </main>
 
+  
     <script src="index.js"></script>
   </body>
 </html>
