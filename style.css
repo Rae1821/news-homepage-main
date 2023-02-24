@@ -27,11 +27,6 @@ body {
     padding: 1.25em;
 }
 
-img {
-    max-width: 100%;
-}
-
-
 /******************************** MOBILE STYLES *******************************/
 
 
@@ -152,14 +147,15 @@ header {
 /* Hero Styles */
 /*****************/
 
-.hero {
-    padding: 1em;
-    margin-bottom: 3em;
-}
-
 .hero--img {
+    background-image: url('./assets/images/image-web-3-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 350px;
     margin: 0 auto;
+    
 }
 /*****************/
 /** Main Styles **/
@@ -309,7 +305,8 @@ button {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 2em auto auto 380px 2em;
-        grid-template-rows: 100px 275px 250px 300px; 
+        grid-template-rows: 100px 250px 200px 300px; 
+        gap: 20px;
         grid-template-areas: 
             ". header header header ."
             ". image image sidebar ."
@@ -341,6 +338,7 @@ button {
         color: var(--clr-dark-grayblue);
         font-weight: 400;
         font-size: .875rem;
+        padding-left: 1em;
     }
 
     .nav-toggle {
@@ -348,9 +346,10 @@ button {
     }
 
     .hero--img {
+        background-image: url('./assets/images/image-web-3-desktop.jpg');
         grid-area: image;
-        overflow: hidden;
-        width: 100%;
+        max-width: 100%;
+        height: 250px;
     }
 
     main {
@@ -361,10 +360,11 @@ button {
     }
 
     main .title {
-        font-size: 3rem;
+        font-size: 2.75rem;
         color: var(--clr-dark-blue);
         width: 35%;
         align-self: center;
+        margin-top: 0;
     }
 
     main .content {
@@ -377,7 +377,6 @@ button {
     main .content > p {
         grid-column: 3 / 4;
         line-height: 1.75;
-        padding-bottom: 3em;
         margin-right: 2em;
     }
 
